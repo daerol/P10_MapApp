@@ -14,6 +14,9 @@
 		51EA57581ED3FFD900D95ED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51EA57561ED3FFD900D95ED2 /* LaunchScreen.storyboard */; };
 		51EA57631ED3FFD900D95ED2 /* P10_MapAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA57621ED3FFD900D95ED2 /* P10_MapAppTests.swift */; };
 		51EA576E1ED3FFD900D95ED2 /* P10_MapAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA576D1ED3FFD900D95ED2 /* P10_MapAppUITests.swift */; };
+		51EA577D1ED4001700D95ED2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EA577C1ED4001700D95ED2 /* CoreLocation.framework */; };
+		51EA577F1ED4001D00D95ED2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EA577E1ED4001D00D95ED2 /* MapKit.framework */; };
+		51EA57841ED4077000D95ED2 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA57831ED4077000D95ED2 /* MapAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,10 @@
 		51EA57691ED3FFD900D95ED2 /* P10_MapAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P10_MapAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51EA576D1ED3FFD900D95ED2 /* P10_MapAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P10_MapAppUITests.swift; sourceTree = "<group>"; };
 		51EA576F1ED3FFD900D95ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51EA577C1ED4001700D95ED2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		51EA577E1ED4001D00D95ED2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		51EA57801ED4039C00D95ED2 /* myLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = myLocation.gpx; sourceTree = "<group>"; };
+		51EA57831ED4077000D95ED2 /* MapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51EA577F1ED4001D00D95ED2 /* MapKit.framework in Frameworks */,
+				51EA577D1ED4001700D95ED2 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,7 @@
 				51EA57611ED3FFD900D95ED2 /* P10_MapAppTests */,
 				51EA576C1ED3FFD900D95ED2 /* P10_MapAppUITests */,
 				51EA574B1ED3FFD900D95ED2 /* Products */,
+				51EA577B1ED4001600D95ED2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +113,8 @@
 				51EA57541ED3FFD900D95ED2 /* Assets.xcassets */,
 				51EA57561ED3FFD900D95ED2 /* LaunchScreen.storyboard */,
 				51EA57591ED3FFD900D95ED2 /* Info.plist */,
+				51EA57801ED4039C00D95ED2 /* myLocation.gpx */,
+				51EA57831ED4077000D95ED2 /* MapAnnotation.swift */,
 			);
 			path = P10_MapApp;
 			sourceTree = "<group>";
@@ -123,6 +135,15 @@
 				51EA576F1ED3FFD900D95ED2 /* Info.plist */,
 			);
 			path = P10_MapAppUITests;
+			sourceTree = "<group>";
+		};
+		51EA577B1ED4001600D95ED2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51EA577E1ED4001D00D95ED2 /* MapKit.framework */,
+				51EA577C1ED4001700D95ED2 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +285,7 @@
 			files = (
 				51EA57501ED3FFD900D95ED2 /* ViewController.swift in Sources */,
 				51EA574E1ED3FFD900D95ED2 /* AppDelegate.swift in Sources */,
+				51EA57841ED4077000D95ED2 /* MapAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
